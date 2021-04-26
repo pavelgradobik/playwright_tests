@@ -1,0 +1,28 @@
+{
+  "name": "playwright_tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -r ts-node/register 'tests/**/*.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pavelgradobik/playwright_tests.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pavelgradobik/playwright_tests/issues"
+  },
+  "homepage": "https://github.com/pavelgradobik/playwright_tests#readme",
+  "devDependencies": {
+    "@types/chai": "^4.2.17",
+    "@types/mocha": "^8.2.2",
+    "chai": "^4.3.4",
+    "mocha": "^8.3.2",
+    "playwright": "^1.10.0",
+    "ts-node": "^9.1.1",
+    "tsconfig-paths": "^3.9.0"
+  }
+}
