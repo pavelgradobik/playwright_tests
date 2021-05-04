@@ -16,9 +16,18 @@ describe('Hotline', function () {
     const mainHotlinePage = new HMainPage(page);
 
     mainHotlinePage.open();
-    
-    mainHotlinePage.makeSearch('Electrolux');
-    page.waitForTimeout(5000);
 
+    mainHotlinePage.makeSearch('Electrolux');
+  });
+
+  it('can open selected item submenu', async function () {
+    const context = await browser.newContext();
+    const page = await context.newPage();
+    const mainHotlinePage = new HMainPage(page);
+
+    mainHotlinePage.openUsingSecondaryMenu('bt', 'Пральні та сушильні машини');
+
+
+    
   });
 });
